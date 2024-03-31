@@ -1,0 +1,13 @@
+2024-03-09 13:17:53,624 [INFO] Entered load_model() in WhisperModelManager
+2024-03-09 13:17:53,625 [INFO] unzipping & loading model
+2024-03-09 13:17:53,626 [INFO] About to load model using zip
+2024-03-09 13:17:53,627 [INFO] Extracting the model from zip
+2024-03-09 13:17:59,053 [INFO] Entered load_model() in WhisperModelManager
+2024-03-09 13:17:59,054 [INFO] Loading model from extracted files
+2024-03-09 13:19:24,279 [INFO] Model 'base' loaded from local zip file.
+2024-03-09 13:22:11,332 [INFO] Entered load_model() in WhisperModelManager
+2024-03-09 13:22:11,335 [INFO] Loading model from extracted files
+2024-03-09 13:22:13,960 [INFO] Model Loaded Successfully!!!
+2024-03-09 13:22:18,186 [INFO] Entered load_model() in WhisperModelManager
+2024-03-09 13:22:18,187 [INFO] Loading model from extracted files
+2024-03-09 13:22:20,530 [INFO] Model Loaded Successfully!!!

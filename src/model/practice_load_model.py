@@ -58,3 +58,41 @@ class PracticeWhisperModelManager:
             whisper.WhisperForConditionalGeneration: The loaded Whisper model.
         """
         pass
+
+
+
+# Driver Code
+
+try:
+    # creating a logger object
+    logger = ProjectLogger().get_logger()
+
+    # Instantiate PracticeWhisperModelManager
+    model_manager = PracticeWhisperModelManager()
+
+    # Load or download a Whisper model
+    try:
+        model_name = "example_model"
+        loaded_model = model_manager.load_model(model_name)
+        if loaded_model is None:
+            raise Exception("Error loading or downloading the model.")
+    except Exception as load_model_error:
+        logger.error(f"Error loading or downloading the model: {load_model_error}")
+
+    # Save the downloaded model as a zip file
+    try:
+        model_folder_path = "path/to/model_folder"
+        model_zip_path = os.path.join(model_folder_path, f"{model_name}.zip")
+        model_manager.save_model_as_zip(loaded_model, model_name, model_folder_path)
+    except Exception as save_zip_error:
+        logger.error(f"Error saving model as zip: {save_zip_error}")
+
+    # Load the model from the zip file
+    try:
+        model_extracted_path = "path/to/extracted_model"
+        loaded_model = model_manager.load_model_from_zip(model_zip_path, model_extracted_path)
+    except Exception as load_zip_error:
+        logger.error(f"Error loading model from zip: {load_zip_error}")
+
+except Exception as e:
+    print(f"An unexpected error occurred: {e}")

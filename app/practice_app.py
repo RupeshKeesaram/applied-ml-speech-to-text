@@ -1,5 +1,7 @@
 from src.model.transcripts import TranscriptProcessor
 from src.model.load_model import WhisperModelManager
+from src.logger import ProjectLogger
+
 
 class PracticeAudioTranscriber:
     """
@@ -40,15 +42,25 @@ class PracticeAudioTranscriber:
         # Step 3: Get Transcripts
         pass
 
-def main():
-    """
-    Main function to demonstrate audio transcription.
-    """
-    # Example usage of AudioTranscriber class
-    # Create an instance of AudioTranscriber
-    # Specify the path to the audio file
-    # Call transcribe_audio method to transcribe the audio file
-    # Print the transcripts and transcription time
 
-if __name__ == "__main__":
-    main()
+
+try:
+    # creating a logger object
+    logger = ProjectLogger().get_logger()
+
+    # Instantiate WhisperModelManager and TranscriptProcessor
+    whisper_model_manager = WhisperModelManager()
+    transcript_processor = TranscriptProcessor()
+
+    # Instantiate PracticeAudioTranscriber
+    audio_transcriber = PracticeAudioTranscriber()
+
+    # Transcribe the provided audio file
+    try:
+        audio_file_path = "path/to/audio_file"
+        transcripts, transcription_time = audio_transcriber.transcribe_audio(audio_file_path)
+    except Exception as transcribe_error:
+        logger.error(f"Error transcribing audio: {transcribe_error}")
+
+except Exception as e:
+    print(f"An unexpected error occurred: {e}")

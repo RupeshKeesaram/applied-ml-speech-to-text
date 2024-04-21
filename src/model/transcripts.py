@@ -38,3 +38,4 @@ class TranscriptProcessor:
         except Exception as e:
             logger.exception("Error Transcribing Audio", e)
             return None
+

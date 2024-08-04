@@ -11,3 +11,408 @@
 2024-03-09 13:22:18,186 [INFO] Entered load_model() in WhisperModelManager
 2024-03-09 13:22:18,187 [INFO] Loading model from extracted files
 2024-03-09 13:22:20,530 [INFO] Model Loaded Successfully!!!
+2024-08-04 17:52:16,899 [INFO] Entered load_model() in WhisperModelManager
+2024-08-04 17:52:16,902 [INFO] Loading model from extracted files
+2024-08-04 17:52:18,963 [INFO] Model Loaded Successfully!!!
+2024-08-04 17:52:28,903 [INFO] Entered load_model() in WhisperModelManager
+2024-08-04 17:52:28,904 [INFO] Loading model from extracted files
+2024-08-04 17:52:29,929 [INFO] Model Loaded Successfully!!!
+2024-08-04 17:52:38,032 [INFO] Entered load_model() in WhisperModelManager
+2024-08-04 17:52:38,036 [INFO] Loading model from extracted files
+2024-08-04 17:52:39,955 [INFO] Model Loaded Successfully!!!
+2024-08-04 17:52:59,229 [INFO] Entered load_model() in WhisperModelManager
+2024-08-04 17:52:59,229 [INFO] Loading model from extracted files
+2024-08-04 17:53:00,091 [INFO] Model Loaded Successfully!!!
+2024-08-04 17:53:04,928 [INFO] Entered load_model() in WhisperModelManager
+2024-08-04 17:53:04,929 [INFO] Loading model from extracted files
+2024-08-04 17:53:06,642 [INFO] Model Loaded Successfully!!!
+2024-08-04 17:53:06,651 [INFO] Entered extract_audio() in YouTubeAudioExtractor class
+2024-08-04 17:53:06,652 [DEBUG] matched regex search: (?:v=|\/)([0-9A-Za-z_-]{11}).*
+2024-08-04 17:53:08,467 [ERROR] HTTP Error 400: Bad Request
+Traceback (most recent call last):
+  File "C:\Users\KeesaramRupesh\OneDrive - Xformics Inc\Documents\Retail\applied-ml-speech-to-text\src\utils\extract_youtube_audio.py", line 29, in extract_audio
+    self.audio = self.data.streams.get_audio_only()
+  File "C:\Users\KeesaramRupesh\OneDrive - Xformics Inc\Documents\Retail\applied-ml-speech-to-text\venv\lib\site-packages\pytube\__main__.py", line 296, in streams
+    return StreamQuery(self.fmt_streams)
+  File "C:\Users\KeesaramRupesh\OneDrive - Xformics Inc\Documents\Retail\applied-ml-speech-to-text\venv\lib\site-packages\pytube\__main__.py", line 176, in fmt_streams
+    stream_manifest = extract.apply_descrambler(self.streaming_data)
+  File "C:\Users\KeesaramRupesh\OneDrive - Xformics Inc\Documents\Retail\applied-ml-speech-to-text\venv\lib\site-packages\pytube\__main__.py", line 160, in streaming_data
+    self.bypass_age_gate()
+  File "C:\Users\KeesaramRupesh\OneDrive - Xformics Inc\Documents\Retail\applied-ml-speech-to-text\venv\lib\site-packages\pytube\__main__.py", line 257, in bypass_age_gate
+    innertube_response = innertube.player(self.video_id)
+  File "C:\Users\KeesaramRupesh\OneDrive - Xformics Inc\Documents\Retail\applied-ml-speech-to-text\venv\lib\site-packages\pytube\innertube.py", line 448, in player
+    return self._call_api(endpoint, query, self.base_data)
+  File "C:\Users\KeesaramRupesh\OneDrive - Xformics Inc\Documents\Retail\applied-ml-speech-to-text\venv\lib\site-packages\pytube\innertube.py", line 390, in _call_api
+    response = request._execute_request(
+  File "C:\Users\KeesaramRupesh\OneDrive - Xformics Inc\Documents\Retail\applied-ml-speech-to-text\venv\lib\site-packages\pytube\request.py", line 37, in _execute_request
+    return urlopen(request, timeout=timeout)  # nosec
+  File "C:\Users\KeesaramRupesh\AppData\Local\Programs\Python\Python310\lib\urllib\request.py", line 216, in urlopen
+    return opener.open(url, data, timeout)
+  File "C:\Users\KeesaramRupesh\AppData\Local\Programs\Python\Python310\lib\urllib\request.py", line 525, in open
+    response = meth(req, response)
+  File "C:\Users\KeesaramRupesh\AppData\Local\Programs\Python\Python310\lib\urllib\request.py", line 634, in http_response
+    response = self.parent.error(
+  File "C:\Users\KeesaramRupesh\AppData\Local\Programs\Python\Python310\lib\urllib\request.py", line 563, in error
+    return self._call_chain(*args)
+  File "C:\Users\KeesaramRupesh\AppData\Local\Programs\Python\Python310\lib\urllib\request.py", line 496, in _call_chain
+    result = func(*args)
+  File "C:\Users\KeesaramRupesh\AppData\Local\Programs\Python\Python310\lib\urllib\request.py", line 643, in http_error_default
+    raise HTTPError(req.full_url, code, msg, hdrs, fp)
+urllib.error.HTTPError: HTTP Error 400: Bad Request
+2024-08-04 17:53:08,474 [INFO] Exiting extract_audio()
+2024-08-04 17:57:45,972 [INFO] Entered load_model() in WhisperModelManager
+2024-08-04 17:57:45,972 [INFO] Loading model from extracted files
+2024-08-04 17:57:47,412 [INFO] Model Loaded Successfully!!!
+2024-08-04 17:57:49,162 [INFO] Entered load_model() in WhisperModelManager
+2024-08-04 17:57:49,162 [INFO] Loading model from extracted files
+2024-08-04 17:57:50,798 [INFO] Model Loaded Successfully!!!
+2024-08-04 17:58:08,014 [INFO] Entered load_model() in WhisperModelManager
+2024-08-04 17:58:08,015 [INFO] Loading model from extracted files
+2024-08-04 17:58:08,241 [INFO] Entered load_model() in WhisperModelManager
+2024-08-04 17:58:08,241 [INFO] Loading model from extracted files
+2024-08-04 17:58:09,626 [INFO] Model Loaded Successfully!!!
+2024-08-04 17:58:09,959 [INFO] Model Loaded Successfully!!!
+2024-08-04 17:58:09,970 [INFO] Entered extract_audio() in YouTubeAudioExtractor class
+2024-08-04 17:58:09,972 [DEBUG] matched regex search: (?:v=|\/)([0-9A-Za-z_-]{11}).*
+2024-08-04 17:58:11,268 [ERROR] HTTP Error 400: Bad Request
+Traceback (most recent call last):
+  File "C:\Users\KeesaramRupesh\OneDrive - Xformics Inc\Documents\Retail\applied-ml-speech-to-text\src\utils\extract_youtube_audio.py", line 30, in extract_audio
+    self.audio = self.data.streams.filter(only_audio=True).first()
+  File "C:\Users\KeesaramRupesh\OneDrive - Xformics Inc\Documents\Retail\applied-ml-speech-to-text\venv\lib\site-packages\pytube\__main__.py", line 296, in streams
+    return StreamQuery(self.fmt_streams)
+  File "C:\Users\KeesaramRupesh\OneDrive - Xformics Inc\Documents\Retail\applied-ml-speech-to-text\venv\lib\site-packages\pytube\__main__.py", line 176, in fmt_streams
+    stream_manifest = extract.apply_descrambler(self.streaming_data)
+  File "C:\Users\KeesaramRupesh\OneDrive - Xformics Inc\Documents\Retail\applied-ml-speech-to-text\venv\lib\site-packages\pytube\__main__.py", line 160, in streaming_data
+    self.bypass_age_gate()
+  File "C:\Users\KeesaramRupesh\OneDrive - Xformics Inc\Documents\Retail\applied-ml-speech-to-text\venv\lib\site-packages\pytube\__main__.py", line 257, in bypass_age_gate
+    innertube_response = innertube.player(self.video_id)
+  File "C:\Users\KeesaramRupesh\OneDrive - Xformics Inc\Documents\Retail\applied-ml-speech-to-text\venv\lib\site-packages\pytube\innertube.py", line 448, in player
+    return self._call_api(endpoint, query, self.base_data)
+  File "C:\Users\KeesaramRupesh\OneDrive - Xformics Inc\Documents\Retail\applied-ml-speech-to-text\venv\lib\site-packages\pytube\innertube.py", line 390, in _call_api
+    response = request._execute_request(
+  File "C:\Users\KeesaramRupesh\OneDrive - Xformics Inc\Documents\Retail\applied-ml-speech-to-text\venv\lib\site-packages\pytube\request.py", line 37, in _execute_request
+    return urlopen(request, timeout=timeout)  # nosec
+  File "C:\Users\KeesaramRupesh\AppData\Local\Programs\Python\Python310\lib\urllib\request.py", line 216, in urlopen
+    return opener.open(url, data, timeout)
+  File "C:\Users\KeesaramRupesh\AppData\Local\Programs\Python\Python310\lib\urllib\request.py", line 525, in open
+    response = meth(req, response)
+  File "C:\Users\KeesaramRupesh\AppData\Local\Programs\Python\Python310\lib\urllib\request.py", line 634, in http_response
+    response = self.parent.error(
+  File "C:\Users\KeesaramRupesh\AppData\Local\Programs\Python\Python310\lib\urllib\request.py", line 563, in error
+    return self._call_chain(*args)
+  File "C:\Users\KeesaramRupesh\AppData\Local\Programs\Python\Python310\lib\urllib\request.py", line 496, in _call_chain
+    result = func(*args)
+  File "C:\Users\KeesaramRupesh\AppData\Local\Programs\Python\Python310\lib\urllib\request.py", line 643, in http_error_default
+    raise HTTPError(req.full_url, code, msg, hdrs, fp)
+urllib.error.HTTPError: HTTP Error 400: Bad Request
+2024-08-04 17:58:11,278 [INFO] Exiting extract_audio()
+2024-08-04 17:59:05,330 [INFO] Entered load_model() in WhisperModelManager
+2024-08-04 17:59:05,332 [INFO] Loading model from extracted files
+2024-08-04 17:59:07,152 [INFO] Model Loaded Successfully!!!
+2024-08-04 17:59:11,357 [INFO] Entered load_model() in WhisperModelManager
+2024-08-04 17:59:11,358 [INFO] Loading model from extracted files
+2024-08-04 17:59:12,617 [INFO] Model Loaded Successfully!!!
+2024-08-04 17:59:16,925 [INFO] Entered load_model() in WhisperModelManager
+2024-08-04 17:59:16,926 [INFO] Loading model from extracted files
+2024-08-04 17:59:18,664 [INFO] Model Loaded Successfully!!!
+2024-08-04 17:59:18,676 [INFO] Entered extract_audio() in YouTubeAudioExtractor class
+2024-08-04 17:59:18,678 [DEBUG] matched regex search: (?:v=|\/)([0-9A-Za-z_-]{11}).*
+2024-08-04 17:59:19,958 [ERROR] HTTP Error 400: Bad Request
+Traceback (most recent call last):
+  File "C:\Users\KeesaramRupesh\OneDrive - Xformics Inc\Documents\Retail\applied-ml-speech-to-text\src\utils\extract_youtube_audio.py", line 30, in extract_audio
+    self.audio = self.data.streams.filter(only_audio=True).first()
+  File "C:\Users\KeesaramRupesh\OneDrive - Xformics Inc\Documents\Retail\applied-ml-speech-to-text\venv\lib\site-packages\pytube\__main__.py", line 296, in streams
+    return StreamQuery(self.fmt_streams)
+  File "C:\Users\KeesaramRupesh\OneDrive - Xformics Inc\Documents\Retail\applied-ml-speech-to-text\venv\lib\site-packages\pytube\__main__.py", line 176, in fmt_streams
+    stream_manifest = extract.apply_descrambler(self.streaming_data)
+  File "C:\Users\KeesaramRupesh\OneDrive - Xformics Inc\Documents\Retail\applied-ml-speech-to-text\venv\lib\site-packages\pytube\__main__.py", line 160, in streaming_data
+    self.bypass_age_gate()
+  File "C:\Users\KeesaramRupesh\OneDrive - Xformics Inc\Documents\Retail\applied-ml-speech-to-text\venv\lib\site-packages\pytube\__main__.py", line 257, in bypass_age_gate
+    innertube_response = innertube.player(self.video_id)
+  File "C:\Users\KeesaramRupesh\OneDrive - Xformics Inc\Documents\Retail\applied-ml-speech-to-text\venv\lib\site-packages\pytube\innertube.py", line 448, in player
+    return self._call_api(endpoint, query, self.base_data)
+  File "C:\Users\KeesaramRupesh\OneDrive - Xformics Inc\Documents\Retail\applied-ml-speech-to-text\venv\lib\site-packages\pytube\innertube.py", line 390, in _call_api
+    response = request._execute_request(
+  File "C:\Users\KeesaramRupesh\OneDrive - Xformics Inc\Documents\Retail\applied-ml-speech-to-text\venv\lib\site-packages\pytube\request.py", line 37, in _execute_request
+    return urlopen(request, timeout=timeout)  # nosec
+  File "C:\Users\KeesaramRupesh\AppData\Local\Programs\Python\Python310\lib\urllib\request.py", line 216, in urlopen
+    return opener.open(url, data, timeout)
+  File "C:\Users\KeesaramRupesh\AppData\Local\Programs\Python\Python310\lib\urllib\request.py", line 525, in open
+    response = meth(req, response)
+  File "C:\Users\KeesaramRupesh\AppData\Local\Programs\Python\Python310\lib\urllib\request.py", line 634, in http_response
+    response = self.parent.error(
+  File "C:\Users\KeesaramRupesh\AppData\Local\Programs\Python\Python310\lib\urllib\request.py", line 563, in error
+    return self._call_chain(*args)
+  File "C:\Users\KeesaramRupesh\AppData\Local\Programs\Python\Python310\lib\urllib\request.py", line 496, in _call_chain
+    result = func(*args)
+  File "C:\Users\KeesaramRupesh\AppData\Local\Programs\Python\Python310\lib\urllib\request.py", line 643, in http_error_default
+    raise HTTPError(req.full_url, code, msg, hdrs, fp)
+urllib.error.HTTPError: HTTP Error 400: Bad Request
+2024-08-04 17:59:19,966 [INFO] Exiting extract_audio()
+2024-08-04 18:04:03,134 [INFO] Entered load_model() in WhisperModelManager
+2024-08-04 18:04:03,136 [INFO] Loading model from extracted files
+2024-08-04 18:04:04,403 [INFO] Model Loaded Successfully!!!
+2024-08-04 18:04:32,161 [INFO] Entered load_model() in WhisperModelManager
+2024-08-04 18:04:32,162 [INFO] Loading model from extracted files
+2024-08-04 18:04:32,382 [INFO] Entered load_model() in WhisperModelManager
+2024-08-04 18:04:32,383 [INFO] Loading model from extracted files
+2024-08-04 18:04:33,627 [INFO] Model Loaded Successfully!!!
+2024-08-04 18:04:33,931 [INFO] Model Loaded Successfully!!!
+2024-08-04 18:04:33,941 [INFO] Entered extract_audio() in YouTubeAudioExtractor class
+2024-08-04 18:04:33,942 [DEBUG] matched regex search: (?:v=|\/)([0-9A-Za-z_-]{11}).*
+2024-08-04 18:04:35,262 [ERROR] HTTP Error 400: Bad Request
+Traceback (most recent call last):
+  File "C:\Users\KeesaramRupesh\OneDrive - Xformics Inc\Documents\Retail\applied-ml-speech-to-text\src\utils\extract_youtube_audio.py", line 30, in extract_audio
+    self.audio = self.data.streams.filter(only_audio=True).first()
+  File "C:\Users\KeesaramRupesh\OneDrive - Xformics Inc\Documents\Retail\applied-ml-speech-to-text\venv\lib\site-packages\pytube\__main__.py", line 296, in streams
+    return StreamQuery(self.fmt_streams)
+  File "C:\Users\KeesaramRupesh\OneDrive - Xformics Inc\Documents\Retail\applied-ml-speech-to-text\venv\lib\site-packages\pytube\__main__.py", line 176, in fmt_streams
+    stream_manifest = extract.apply_descrambler(self.streaming_data)
+  File "C:\Users\KeesaramRupesh\OneDrive - Xformics Inc\Documents\Retail\applied-ml-speech-to-text\venv\lib\site-packages\pytube\__main__.py", line 160, in streaming_data
+    self.bypass_age_gate()
+  File "C:\Users\KeesaramRupesh\OneDrive - Xformics Inc\Documents\Retail\applied-ml-speech-to-text\venv\lib\site-packages\pytube\__main__.py", line 257, in bypass_age_gate
+    innertube_response = innertube.player(self.video_id)
+  File "C:\Users\KeesaramRupesh\OneDrive - Xformics Inc\Documents\Retail\applied-ml-speech-to-text\venv\lib\site-packages\pytube\innertube.py", line 448, in player
+    return self._call_api(endpoint, query, self.base_data)
+  File "C:\Users\KeesaramRupesh\OneDrive - Xformics Inc\Documents\Retail\applied-ml-speech-to-text\venv\lib\site-packages\pytube\innertube.py", line 390, in _call_api
+    response = request._execute_request(
+  File "C:\Users\KeesaramRupesh\OneDrive - Xformics Inc\Documents\Retail\applied-ml-speech-to-text\venv\lib\site-packages\pytube\request.py", line 37, in _execute_request
+    return urlopen(request, timeout=timeout)  # nosec
+  File "C:\Users\KeesaramRupesh\AppData\Local\Programs\Python\Python310\lib\urllib\request.py", line 216, in urlopen
+    return opener.open(url, data, timeout)
+  File "C:\Users\KeesaramRupesh\AppData\Local\Programs\Python\Python310\lib\urllib\request.py", line 525, in open
+    response = meth(req, response)
+  File "C:\Users\KeesaramRupesh\AppData\Local\Programs\Python\Python310\lib\urllib\request.py", line 634, in http_response
+    response = self.parent.error(
+  File "C:\Users\KeesaramRupesh\AppData\Local\Programs\Python\Python310\lib\urllib\request.py", line 563, in error
+    return self._call_chain(*args)
+  File "C:\Users\KeesaramRupesh\AppData\Local\Programs\Python\Python310\lib\urllib\request.py", line 496, in _call_chain
+    result = func(*args)
+  File "C:\Users\KeesaramRupesh\AppData\Local\Programs\Python\Python310\lib\urllib\request.py", line 643, in http_error_default
+    raise HTTPError(req.full_url, code, msg, hdrs, fp)
+urllib.error.HTTPError: HTTP Error 400: Bad Request
+2024-08-04 18:04:35,271 [INFO] Exiting extract_audio()
+2024-08-04 18:04:35,581 [INFO] Entered load_model() in WhisperModelManager
+2024-08-04 18:04:35,582 [INFO] Loading model from extracted files
+2024-08-04 18:04:36,501 [INFO] Model Loaded Successfully!!!
+2024-08-04 18:05:32,872 [INFO] Entered load_model() in WhisperModelManager
+2024-08-04 18:05:32,872 [INFO] Loading model from extracted files
+2024-08-04 18:05:33,640 [INFO] Model Loaded Successfully!!!
+2024-08-04 18:05:33,649 [INFO] Entered extract_audio() in YouTubeAudioExtractor class
+2024-08-04 18:05:33,649 [DEBUG] matched regex search: (?:v=|\/)([0-9A-Za-z_-]{11}).*
+2024-08-04 18:05:35,212 [ERROR] HTTP Error 400: Bad Request
+Traceback (most recent call last):
+  File "C:\Users\KeesaramRupesh\OneDrive - Xformics Inc\Documents\Retail\applied-ml-speech-to-text\src\utils\extract_youtube_audio.py", line 30, in extract_audio
+    self.audio = self.data.streams.filter(only_audio=True).first()
+  File "C:\Users\KeesaramRupesh\OneDrive - Xformics Inc\Documents\Retail\applied-ml-speech-to-text\venv\lib\site-packages\pytube\__main__.py", line 296, in streams
+    return StreamQuery(self.fmt_streams)
+  File "C:\Users\KeesaramRupesh\OneDrive - Xformics Inc\Documents\Retail\applied-ml-speech-to-text\venv\lib\site-packages\pytube\__main__.py", line 176, in fmt_streams
+    stream_manifest = extract.apply_descrambler(self.streaming_data)
+  File "C:\Users\KeesaramRupesh\OneDrive - Xformics Inc\Documents\Retail\applied-ml-speech-to-text\venv\lib\site-packages\pytube\__main__.py", line 160, in streaming_data
+    self.bypass_age_gate()
+  File "C:\Users\KeesaramRupesh\OneDrive - Xformics Inc\Documents\Retail\applied-ml-speech-to-text\venv\lib\site-packages\pytube\__main__.py", line 257, in bypass_age_gate
+    innertube_response = innertube.player(self.video_id)
+  File "C:\Users\KeesaramRupesh\OneDrive - Xformics Inc\Documents\Retail\applied-ml-speech-to-text\venv\lib\site-packages\pytube\innertube.py", line 448, in player
+    return self._call_api(endpoint, query, self.base_data)
+  File "C:\Users\KeesaramRupesh\OneDrive - Xformics Inc\Documents\Retail\applied-ml-speech-to-text\venv\lib\site-packages\pytube\innertube.py", line 390, in _call_api
+    response = request._execute_request(
+  File "C:\Users\KeesaramRupesh\OneDrive - Xformics Inc\Documents\Retail\applied-ml-speech-to-text\venv\lib\site-packages\pytube\request.py", line 37, in _execute_request
+    return urlopen(request, timeout=timeout)  # nosec
+  File "C:\Users\KeesaramRupesh\AppData\Local\Programs\Python\Python310\lib\urllib\request.py", line 216, in urlopen
+    return opener.open(url, data, timeout)
+  File "C:\Users\KeesaramRupesh\AppData\Local\Programs\Python\Python310\lib\urllib\request.py", line 525, in open
+    response = meth(req, response)
+  File "C:\Users\KeesaramRupesh\AppData\Local\Programs\Python\Python310\lib\urllib\request.py", line 634, in http_response
+    response = self.parent.error(
+  File "C:\Users\KeesaramRupesh\AppData\Local\Programs\Python\Python310\lib\urllib\request.py", line 563, in error
+    return self._call_chain(*args)
+  File "C:\Users\KeesaramRupesh\AppData\Local\Programs\Python\Python310\lib\urllib\request.py", line 496, in _call_chain
+    result = func(*args)
+  File "C:\Users\KeesaramRupesh\AppData\Local\Programs\Python\Python310\lib\urllib\request.py", line 643, in http_error_default
+    raise HTTPError(req.full_url, code, msg, hdrs, fp)
+urllib.error.HTTPError: HTTP Error 400: Bad Request
+2024-08-04 18:05:35,217 [INFO] Exiting extract_audio()
+2024-08-04 18:06:39,891 [INFO] Entered load_model() in WhisperModelManager
+2024-08-04 18:06:39,892 [INFO] Entered load_model() in WhisperModelManager
+2024-08-04 18:06:39,892 [INFO] Entered load_model() in WhisperModelManager
+2024-08-04 18:06:39,892 [INFO] Loading model from extracted files
+2024-08-04 18:06:39,893 [INFO] Loading model from extracted files
+2024-08-04 18:06:39,895 [INFO] Loading model from extracted files
+2024-08-04 18:06:44,622 [INFO] Model Loaded Successfully!!!
+2024-08-04 18:06:44,896 [INFO] Model Loaded Successfully!!!
+2024-08-04 18:06:45,046 [INFO] Model Loaded Successfully!!!
+2024-08-04 18:06:53,286 [INFO] Entered load_model() in WhisperModelManager
+2024-08-04 18:06:53,287 [INFO] Loading model from extracted files
+2024-08-04 18:06:55,057 [INFO] Model Loaded Successfully!!!
+2024-08-04 18:06:59,090 [INFO] Entered load_model() in WhisperModelManager
+2024-08-04 18:06:59,091 [INFO] Loading model from extracted files
+2024-08-04 18:07:01,110 [INFO] Model Loaded Successfully!!!
+2024-08-04 18:07:01,117 [INFO] Entered extract_audio() in YouTubeAudioExtractor class
+2024-08-04 18:07:01,118 [DEBUG] matched regex search: (?:v=|\/)([0-9A-Za-z_-]{11}).*
+2024-08-04 18:07:04,566 [ERROR] HTTP Error 400: Bad Request
+Traceback (most recent call last):
+  File "C:\Users\KeesaramRupesh\OneDrive - Xformics Inc\Documents\Retail\applied-ml-speech-to-text\src\utils\extract_youtube_audio.py", line 30, in extract_audio
+    self.audio = self.data.streams.filter(only_audio=True).first()
+  File "C:\Users\KeesaramRupesh\OneDrive - Xformics Inc\Documents\Retail\applied-ml-speech-to-text\venv\lib\site-packages\pytube\__main__.py", line 296, in streams
+    return StreamQuery(self.fmt_streams)
+  File "C:\Users\KeesaramRupesh\OneDrive - Xformics Inc\Documents\Retail\applied-ml-speech-to-text\venv\lib\site-packages\pytube\__main__.py", line 176, in fmt_streams
+    stream_manifest = extract.apply_descrambler(self.streaming_data)
+  File "C:\Users\KeesaramRupesh\OneDrive - Xformics Inc\Documents\Retail\applied-ml-speech-to-text\venv\lib\site-packages\pytube\__main__.py", line 160, in streaming_data
+    self.bypass_age_gate()
+  File "C:\Users\KeesaramRupesh\OneDrive - Xformics Inc\Documents\Retail\applied-ml-speech-to-text\venv\lib\site-packages\pytube\__main__.py", line 257, in bypass_age_gate
+    innertube_response = innertube.player(self.video_id)
+  File "C:\Users\KeesaramRupesh\OneDrive - Xformics Inc\Documents\Retail\applied-ml-speech-to-text\venv\lib\site-packages\pytube\innertube.py", line 448, in player
+    return self._call_api(endpoint, query, self.base_data)
+  File "C:\Users\KeesaramRupesh\OneDrive - Xformics Inc\Documents\Retail\applied-ml-speech-to-text\venv\lib\site-packages\pytube\innertube.py", line 390, in _call_api
+    response = request._execute_request(
+  File "C:\Users\KeesaramRupesh\OneDrive - Xformics Inc\Documents\Retail\applied-ml-speech-to-text\venv\lib\site-packages\pytube\request.py", line 37, in _execute_request
+    return urlopen(request, timeout=timeout)  # nosec
+  File "C:\Users\KeesaramRupesh\AppData\Local\Programs\Python\Python310\lib\urllib\request.py", line 216, in urlopen
+    return opener.open(url, data, timeout)
+  File "C:\Users\KeesaramRupesh\AppData\Local\Programs\Python\Python310\lib\urllib\request.py", line 525, in open
+    response = meth(req, response)
+  File "C:\Users\KeesaramRupesh\AppData\Local\Programs\Python\Python310\lib\urllib\request.py", line 634, in http_response
+    response = self.parent.error(
+  File "C:\Users\KeesaramRupesh\AppData\Local\Programs\Python\Python310\lib\urllib\request.py", line 563, in error
+    return self._call_chain(*args)
+  File "C:\Users\KeesaramRupesh\AppData\Local\Programs\Python\Python310\lib\urllib\request.py", line 496, in _call_chain
+    result = func(*args)
+  File "C:\Users\KeesaramRupesh\AppData\Local\Programs\Python\Python310\lib\urllib\request.py", line 643, in http_error_default
+    raise HTTPError(req.full_url, code, msg, hdrs, fp)
+urllib.error.HTTPError: HTTP Error 400: Bad Request
+2024-08-04 18:07:04,575 [INFO] Exiting extract_audio()
+2024-08-04 18:07:37,775 [INFO] Entered load_model() in WhisperModelManager
+2024-08-04 18:07:37,775 [INFO] Entered load_model() in WhisperModelManager
+2024-08-04 18:07:37,872 [INFO] Loading model from extracted files
+2024-08-04 18:07:37,872 [INFO] Loading model from extracted files
+2024-08-04 18:07:42,346 [INFO] Model Loaded Successfully!!!
+2024-08-04 18:07:42,494 [INFO] Model Loaded Successfully!!!
+2024-08-04 18:07:44,299 [INFO] Entered load_model() in WhisperModelManager
+2024-08-04 18:07:44,300 [INFO] Loading model from extracted files
+2024-08-04 18:07:45,403 [INFO] Model Loaded Successfully!!!
+2024-08-04 18:07:49,880 [INFO] Entered load_model() in WhisperModelManager
+2024-08-04 18:07:49,880 [INFO] Loading model from extracted files
+2024-08-04 18:07:50,099 [INFO] Entered load_model() in WhisperModelManager
+2024-08-04 18:07:50,100 [INFO] Loading model from extracted files
+2024-08-04 18:07:51,279 [INFO] Model Loaded Successfully!!!
+2024-08-04 18:07:51,579 [INFO] Model Loaded Successfully!!!
+2024-08-04 18:07:51,588 [INFO] Entered extract_audio() in YouTubeAudioExtractor class
+2024-08-04 18:07:51,590 [DEBUG] matched regex search: (?:v=|\/)([0-9A-Za-z_-]{11}).*
+2024-08-04 18:07:54,906 [ERROR] HTTP Error 400: Bad Request
+Traceback (most recent call last):
+  File "C:\Users\KeesaramRupesh\OneDrive - Xformics Inc\Documents\Retail\applied-ml-speech-to-text\src\utils\extract_youtube_audio.py", line 29, in extract_audio
+    self.audio = self.data.streams.get_audio_only()
+  File "C:\Users\KeesaramRupesh\OneDrive - Xformics Inc\Documents\Retail\applied-ml-speech-to-text\venv\lib\site-packages\pytube\__main__.py", line 296, in streams
+    return StreamQuery(self.fmt_streams)
+  File "C:\Users\KeesaramRupesh\OneDrive - Xformics Inc\Documents\Retail\applied-ml-speech-to-text\venv\lib\site-packages\pytube\__main__.py", line 176, in fmt_streams
+    stream_manifest = extract.apply_descrambler(self.streaming_data)
+  File "C:\Users\KeesaramRupesh\OneDrive - Xformics Inc\Documents\Retail\applied-ml-speech-to-text\venv\lib\site-packages\pytube\__main__.py", line 160, in streaming_data
+    self.bypass_age_gate()
+  File "C:\Users\KeesaramRupesh\OneDrive - Xformics Inc\Documents\Retail\applied-ml-speech-to-text\venv\lib\site-packages\pytube\__main__.py", line 257, in bypass_age_gate
+    innertube_response = innertube.player(self.video_id)
+  File "C:\Users\KeesaramRupesh\OneDrive - Xformics Inc\Documents\Retail\applied-ml-speech-to-text\venv\lib\site-packages\pytube\innertube.py", line 448, in player
+    return self._call_api(endpoint, query, self.base_data)
+  File "C:\Users\KeesaramRupesh\OneDrive - Xformics Inc\Documents\Retail\applied-ml-speech-to-text\venv\lib\site-packages\pytube\innertube.py", line 390, in _call_api
+    response = request._execute_request(
+  File "C:\Users\KeesaramRupesh\OneDrive - Xformics Inc\Documents\Retail\applied-ml-speech-to-text\venv\lib\site-packages\pytube\request.py", line 37, in _execute_request
+    return urlopen(request, timeout=timeout)  # nosec
+  File "C:\Users\KeesaramRupesh\AppData\Local\Programs\Python\Python310\lib\urllib\request.py", line 216, in urlopen
+    return opener.open(url, data, timeout)
+  File "C:\Users\KeesaramRupesh\AppData\Local\Programs\Python\Python310\lib\urllib\request.py", line 525, in open
+    response = meth(req, response)
+  File "C:\Users\KeesaramRupesh\AppData\Local\Programs\Python\Python310\lib\urllib\request.py", line 634, in http_response
+    response = self.parent.error(
+  File "C:\Users\KeesaramRupesh\AppData\Local\Programs\Python\Python310\lib\urllib\request.py", line 563, in error
+    return self._call_chain(*args)
+  File "C:\Users\KeesaramRupesh\AppData\Local\Programs\Python\Python310\lib\urllib\request.py", line 496, in _call_chain
+    result = func(*args)
+  File "C:\Users\KeesaramRupesh\AppData\Local\Programs\Python\Python310\lib\urllib\request.py", line 643, in http_error_default
+    raise HTTPError(req.full_url, code, msg, hdrs, fp)
+urllib.error.HTTPError: HTTP Error 400: Bad Request
+2024-08-04 18:07:54,913 [INFO] Exiting extract_audio()
+2024-08-04 18:09:53,089 [INFO] Entered load_model() in WhisperModelManager
+2024-08-04 18:09:53,090 [INFO] Entered load_model() in WhisperModelManager
+2024-08-04 18:09:53,091 [INFO] Entered load_model() in WhisperModelManager
+2024-08-04 18:09:53,092 [INFO] Entered load_model() in WhisperModelManager
+2024-08-04 18:09:53,092 [INFO] Loading model from extracted files
+2024-08-04 18:09:53,095 [INFO] Loading model from extracted files
+2024-08-04 18:09:53,095 [INFO] Loading model from extracted files
+2024-08-04 18:09:53,096 [INFO] Loading model from extracted files
+2024-08-04 18:10:00,324 [INFO] Model Loaded Successfully!!!
+2024-08-04 18:10:00,576 [INFO] Model Loaded Successfully!!!
+2024-08-04 18:10:00,773 [INFO] Model Loaded Successfully!!!
+2024-08-04 18:10:00,806 [INFO] Model Loaded Successfully!!!
+2024-08-04 18:10:11,326 [INFO] Entered load_model() in WhisperModelManager
+2024-08-04 18:10:11,327 [INFO] Loading model from extracted files
+2024-08-04 18:10:12,739 [INFO] Model Loaded Successfully!!!
+2024-08-04 18:10:12,924 [INFO] Entered load_model() in WhisperModelManager
+2024-08-04 18:10:12,926 [INFO] Loading model from extracted files
+2024-08-04 18:10:14,364 [INFO] Entered load_model() in WhisperModelManager
+2024-08-04 18:10:14,365 [INFO] Loading model from extracted files
+2024-08-04 18:10:16,372 [INFO] Model Loaded Successfully!!!
+2024-08-04 18:10:17,052 [INFO] Model Loaded Successfully!!!
+2024-08-04 18:10:17,064 [INFO] Entered extract_audio() in YouTubeAudioExtractor class
+2024-08-04 18:10:17,065 [DEBUG] matched regex search: (?:v=|\/)([0-9A-Za-z_-]{11}).*
+2024-08-04 18:10:19,883 [ERROR] HTTP Error 400: Bad Request
+Traceback (most recent call last):
+  File "C:\Users\KeesaramRupesh\OneDrive - Xformics Inc\Documents\Retail\applied-ml-speech-to-text\src\utils\extract_youtube_audio.py", line 29, in extract_audio
+    self.audio = self.data.streams.get_audio_only()
+  File "C:\Users\KeesaramRupesh\OneDrive - Xformics Inc\Documents\Retail\applied-ml-speech-to-text\venv\lib\site-packages\pytube\__main__.py", line 296, in streams
+    return StreamQuery(self.fmt_streams)
+  File "C:\Users\KeesaramRupesh\OneDrive - Xformics Inc\Documents\Retail\applied-ml-speech-to-text\venv\lib\site-packages\pytube\__main__.py", line 176, in fmt_streams
+    stream_manifest = extract.apply_descrambler(self.streaming_data)
+  File "C:\Users\KeesaramRupesh\OneDrive - Xformics Inc\Documents\Retail\applied-ml-speech-to-text\venv\lib\site-packages\pytube\__main__.py", line 157, in streaming_data
+    if 'streamingData' in self.vid_info:
+  File "C:\Users\KeesaramRupesh\OneDrive - Xformics Inc\Documents\Retail\applied-ml-speech-to-text\venv\lib\site-packages\pytube\__main__.py", line 246, in vid_info
+    innertube_response = innertube.player(self.video_id)
+  File "C:\Users\KeesaramRupesh\OneDrive - Xformics Inc\Documents\Retail\applied-ml-speech-to-text\venv\lib\site-packages\pytube\innertube.py", line 300, in player
+    return self._call_api(endpoint, query, self.base_data)
+  File "C:\Users\KeesaramRupesh\OneDrive - Xformics Inc\Documents\Retail\applied-ml-speech-to-text\venv\lib\site-packages\pytube\innertube.py", line 242, in _call_api
+    response = request._execute_request(
+  File "C:\Users\KeesaramRupesh\OneDrive - Xformics Inc\Documents\Retail\applied-ml-speech-to-text\venv\lib\site-packages\pytube\request.py", line 37, in _execute_request
+    return urlopen(request, timeout=timeout)  # nosec
+  File "C:\Users\KeesaramRupesh\AppData\Local\Programs\Python\Python310\lib\urllib\request.py", line 216, in urlopen
+    return opener.open(url, data, timeout)
+  File "C:\Users\KeesaramRupesh\AppData\Local\Programs\Python\Python310\lib\urllib\request.py", line 525, in open
+    response = meth(req, response)
+  File "C:\Users\KeesaramRupesh\AppData\Local\Programs\Python\Python310\lib\urllib\request.py", line 634, in http_response
+    response = self.parent.error(
+  File "C:\Users\KeesaramRupesh\AppData\Local\Programs\Python\Python310\lib\urllib\request.py", line 563, in error
+    return self._call_chain(*args)
+  File "C:\Users\KeesaramRupesh\AppData\Local\Programs\Python\Python310\lib\urllib\request.py", line 496, in _call_chain
+    result = func(*args)
+  File "C:\Users\KeesaramRupesh\AppData\Local\Programs\Python\Python310\lib\urllib\request.py", line 643, in http_error_default
+    raise HTTPError(req.full_url, code, msg, hdrs, fp)
+urllib.error.HTTPError: HTTP Error 400: Bad Request
+2024-08-04 18:10:19,895 [INFO] Exiting extract_audio()
+2024-08-04 18:14:45,558 [INFO] Entered load_model() in WhisperModelManager
+2024-08-04 18:14:45,559 [INFO] Loading model from extracted files
+2024-08-04 18:14:46,905 [INFO] Model Loaded Successfully!!!
+2024-08-04 18:14:57,829 [INFO] Entered load_model() in WhisperModelManager
+2024-08-04 18:14:57,830 [INFO] Loading model from extracted files
+2024-08-04 18:14:58,723 [INFO] Model Loaded Successfully!!!
+2024-08-04 18:14:59,375 [INFO] Entered load_model() in WhisperModelManager
+2024-08-04 18:14:59,376 [INFO] Loading model from extracted files
+2024-08-04 18:15:01,397 [INFO] Model Loaded Successfully!!!
+2024-08-04 18:15:01,408 [INFO] Entered extract_audio() in YouTubeAudioExtractor class
+2024-08-04 18:15:01,409 [DEBUG] matched regex search: (?:v=|\/)([0-9A-Za-z_-]{11}).*
+2024-08-04 18:15:01,979 [DEBUG] applying descrambler
+2024-08-04 18:15:01,982 [DEBUG] downloading (653725 total bytes) file to C:\Users\KeesaramRupesh\OneDrive - Xformics Inc\Documents\Retail\applied-ml-speech-to-text\data\uploaded\youtube_audio.mp4
+2024-08-04 18:15:04,688 [INFO] Entered load_model() in WhisperModelManager
+2024-08-04 18:15:04,691 [INFO] Loading model from extracted files
+2024-08-04 18:15:04,746 [INFO] Entered load_model() in WhisperModelManager
+2024-08-04 18:15:04,748 [INFO] Loading model from extracted files
+2024-08-04 18:15:05,880 [DEBUG] download remaining: 0
+2024-08-04 18:15:05,888 [DEBUG] download finished
+2024-08-04 18:15:05,889 [INFO] Exiting extract_audio()
+2024-08-04 18:15:08,069 [INFO] Model Loaded Successfully!!!
+2024-08-04 18:15:08,390 [INFO] Model Loaded Successfully!!!
+2024-08-04 18:15:10,969 [INFO] Entered load_model() in WhisperModelManager
+2024-08-04 18:15:10,971 [INFO] Loading model from extracted files
+2024-08-04 18:15:12,746 [INFO] Model Loaded Successfully!!!
+2024-08-04 18:15:14,770 [INFO] Entered load_model() in WhisperModelManager
+2024-08-04 18:15:14,770 [INFO] Loading model from extracted files
+2024-08-04 18:15:16,058 [INFO] Model Loaded Successfully!!!
+2024-08-04 18:15:21,608 [INFO] Entered load_model() in WhisperModelManager
+2024-08-04 18:15:21,609 [INFO] Loading model from extracted files
+2024-08-04 18:15:24,627 [INFO] Model Loaded Successfully!!!

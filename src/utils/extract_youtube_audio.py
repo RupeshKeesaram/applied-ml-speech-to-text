@@ -1,5 +1,7 @@
 import pytube
 from src.logger import ProjectLogger
+from pytubefix import YouTube
+from pytubefix.cli import on_progress
 
 logger = ProjectLogger().get_logger()
 
@@ -24,7 +26,10 @@ class YouTubeAudioExtractor:
         """
         logger.info(f"Entered extract_audio() in {self.__class__.__name__} class")
         try:
-            self.data = pytube.YouTube(url)
+            # self.data = pytube.YouTube(url)
+            # ys = yt.streams.get_audio_only()
+            # ys.download(mp3=True)
+            self.data = YouTube(url)
             if self.data:
                 self.audio = self.data.streams.get_audio_only()
                 if self.audio:
